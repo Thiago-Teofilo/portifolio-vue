@@ -1,11 +1,13 @@
 <template>
-  <button class="grid-cols-2 justify-center gap-4 btn">
-    <p class="my-auto" v-if="text">
-      {{ text }}
-    </p>
-    <div class="my-auto w-max">
-      <Icon v-if="iconPayload" :icon-payload="iconPayload" />
-      <slot></slot>
+  <button class="gap-4 btn">
+    <div class="max-content flex mx-auto place-content-between">
+      <p class="my-auto" v-if="text">
+        {{ text }}
+      </p>
+      <div class="my-auto w-max">
+        <Icon v-if="iconPayload" :icon-payload="iconPayload" />
+        <slot></slot>
+      </div>
     </div>
   </button>
 </template>
@@ -29,7 +31,7 @@ withDefaults(
 
 <style>
 .btn {
-  @apply flex px-4 py-3 rounded-lg shadow-[0_0_2px_1px_black]
+  @apply px-4 py-3 rounded-lg shadow-[0_0_2px_1px_black]
     hover:bg-tertiary hover:text-[rgb(0,0,0)] transition;
 }
 </style>
