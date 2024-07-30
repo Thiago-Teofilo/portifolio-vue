@@ -4,14 +4,16 @@
       class="section welcome-image self-end lg:!w-1/3 relative h-max !w-max mx-auto"
     >
       <img
-        src="../assets/me.jpeg"
+        src="../assets/me.png"
         alt=""
         srcset=""
-        class="max-h-[20rem] rounded-full lg:max-h-max"
+        class="max-h-[10rem] rounded-full lg:max-h-max"
       />
     </div>
     <div class="section lg:w-2/3 welcome-text text-left">
-      <span class="info-title">Bem vindo(a) ao meu mundo</span>
+      <span class="info-title text-center sm:text-left"
+        >Bem vindo(a) ao meu mundo</span
+      >
       <h1 class="title">
         Olá, eu sou
         <TypingTextEffect text="Thiago Teofilo" component-tag="strong" />
