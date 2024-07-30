@@ -4,23 +4,23 @@
       class="section welcome-image self-end lg:!w-1/3 relative h-max !w-max mx-auto"
     >
       <img
-        src="https://rainbowit.net/html/inbio/assets/images/slider/banner-01.png"
+        src="../assets/me.jpeg"
         alt=""
         srcset=""
-        class="max-h-[20rem] lg:max-h-max"
+        class="max-h-[20rem] rounded-full lg:max-h-max"
       />
     </div>
     <div class="section lg:w-2/3 welcome-text text-left">
       <span class="info-title">Bem vindo(a) ao meu mundo</span>
       <h1 class="title">
         Olá, eu sou
-        <strong>Thiago Teofilo</strong>
+        <TypingTextEffect text="Thiago Teofilo" component-tag="strong" />
       </h1>
       <h2 class="title">Desenvolvedor Full stack</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptas
-        molestias sunt repellat ea nobis corrupti adipisci. Molestiae ex dolor
-        ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam cum
+        Sou especialista em Node.js e formado em Análise e Desenvolvimento de
+        Sistemas, trabalhando com desenvolvimento de software desde 2023. Gosto
+        de explorar novas tecnologias e compartilhar conhecimento.
       </p>
       <div class="additional-info uppercase">
         <div class="social-media mt-10">
@@ -34,6 +34,7 @@
                 name: 'Linkedin',
               }"
               text="Linkedin"
+              href="https://www.linkedin.com/in/thiagoteofilojs/"
             />
             <BaseButton
               :icon-payload="{
@@ -41,6 +42,7 @@
                 name: 'Github',
               }"
               text="Github"
+              href="https://github.com/Thiago-Teofilo"
             />
             <BaseButton
               :icon-payload="{
@@ -48,6 +50,7 @@
                 name: 'Instagram',
               }"
               text="Instagram"
+              href="https://www.instagram.com/thiago_teofilo?igsh=MWhic3pqMjhiaDZ3OA=="
             />
           </div>
         </div>
@@ -58,11 +61,12 @@
 
 <script lang="ts" setup>
 import BaseButton from '@/components/BaseButton.vue';
+import TypingTextEffect from './TypingTextEffect.vue';
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 .welcome {
-  @apply lg:flex lg:gap-5 lg:flex-row-reverse items-center;
+  @apply xl:mt-20 lg:flex lg:gap-10 2xl:gap-80 lg:flex-row-reverse items-center;
 }
 
 strong {
@@ -87,7 +91,7 @@ strong {
 
 .welcome-image::before {
   content: '';
-  @apply absolute rounded-lg opacity-50 bg-primary 
+  @apply absolute rounded-full opacity-50 bg-primary 
     h-full w-full top-0 right-0 -z-10 shadow-[0_0_5px_1px_black]
     border-solid border-primary;
 }

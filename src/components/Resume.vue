@@ -5,22 +5,18 @@
     </div>
     <div class="section">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsa,
-        impedit dolor repudiandae laborum omnis cum et, fugit rem dicta earum
-        alias tempora dolores, nisi consequuntur maiores! Quibusdam, nisi rerum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit
-        quis, voluptates officia, exercitationem alias neque unde iure provident
-        quisquam facere! Quod corrupti quasi repellat cumque aliquam vel ea
-        corporis!
+        Durante meu tempo na MultiBombas, de setembro de 2023 a março de 2024,
+        liderei o desenvolvimento do Controle Integra, um sistema revolucionário
+        para fabricantes de bombas industriais. Este projeto envolveu a
+        construção de uma API robusta utilizando frameworks em Node.js e uma
+        interface intuitiva, além da integração com um banco de dados PostgreSQL
+        para garantir um armazenamento de dados seguro e eficiente.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis
-        vitae amet eius tempore ducimus fugit quod, consectetur architecto iusto
-        voluptas eligendi, nulla, nostrum eaque repudiandae consequatur? Vel, at
-        placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Provident doloremque neque dolorum, corrupti repellat reprehenderit
-        iusto dolore dolorem aliquam maiores libero nam. Incidunt vel architecto
-        natus aut eum saepe debitis.
+        Atualmente, estou trabalhando na atualização da interface e da API de um
+        sistema de e-commerce. Neste projeto, estou ampliando minha experiência
+        profissional com Vue.js, NestJS e TailwindCSS, dentro de um fluxo de
+        trabalho extremamente eficiente e bem organizado.
       </p>
     </div>
   </div>
@@ -28,7 +24,7 @@
 
 <script setup lang="ts"></script>
 
-<style>
+<style lang="postcss">
 p {
   @apply text-justify;
 }

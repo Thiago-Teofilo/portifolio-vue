@@ -1,14 +1,16 @@
 <template>
   <button class="gap-4 btn">
-    <div class="max-content flex mx-auto place-content-between">
-      <p class="my-auto" v-if="text">
-        {{ text }}
-      </p>
-      <div class="my-auto w-max">
-        <Icon v-if="iconPayload" :icon-payload="iconPayload" />
-        <slot></slot>
+    <a :href="href" target="_blank">
+      <div class="max-content flex mx-auto place-content-between">
+        <p v-if="text" class="my-auto">
+          {{ text }}
+        </p>
+        <div class="my-auto w-max">
+          <Icon v-if="iconPayload" :icon-payload="iconPayload" />
+          <slot></slot>
+        </div>
       </div>
-    </div>
+    </a>
   </button>
 </template>
 
@@ -21,15 +23,17 @@ withDefaults(
   defineProps<{
     text?: string;
     iconPayload?: IIcon;
+    href?: string;
   }>(),
   {
     text: undefined,
     iconPayload: undefined,
+    href: undefined,
   }
 );
 </script>
 
-<style>
+<style lang="postcss">
 .btn {
   @apply px-4 py-3 rounded-lg shadow-[0_0_2px_1px_black]
     hover:bg-tertiary hover:text-[rgb(0,0,0)] transition;
