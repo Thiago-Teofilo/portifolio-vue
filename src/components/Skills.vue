@@ -27,11 +27,11 @@ const skillCards = SKILLS;
 
 <style lang="postcss">
 .skill-card {
-  @apply cursor-pointer transition border-b-2 bg-secondary border-solid rounded-tr-2xl grid justify-items-center gap-2 p-4;
+  @apply cursor-pointer shadow-[0_0_2px_-1px_white] transition border-b-2 bg-secondary border-solid rounded-tr-2xl grid justify-items-center gap-2 p-4;
 }
 
 .skill-card:hover {
-  @apply drop-shadow-[0px_0px_1px_rgba(100,100,100,50)] bg-primary shadow-lg;
+  @apply bg-primary;
 }
 
 .skill-card:nth-child(7) {

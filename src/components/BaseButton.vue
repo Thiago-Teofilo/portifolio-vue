@@ -35,7 +35,7 @@ withDefaults(
 
 <style lang="postcss">
 .btn {
-  @apply px-4 py-3 rounded-lg shadow-[0_0_2px_1px_black]
+  @apply px-4 py-3 rounded-lg shadow-[0_0_2px_-1px_white]
     hover:bg-tertiary hover:text-[rgb(0,0,0)] transition;
 }
 </style>
