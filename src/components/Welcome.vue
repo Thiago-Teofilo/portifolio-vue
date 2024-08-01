@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <div id="welcome" class="welcome">
     <div
       class="section welcome-image self-end lg:!w-1/3 relative h-max !w-max mx-auto"
     >
@@ -7,7 +7,7 @@
         src="../assets/me.png"
         alt=""
         srcset=""
-        class="aspect-square object-cover max-h-[10rem] w-full rounded-full lg:max-h-max"
+        class="aspect-square border-secondary border-2 border-solid object-cover max-h-[10rem] w-full rounded-full lg:max-h-max"
       />
     </div>
     <div class="section lg:w-2/3 welcome-text text-left">
@@ -89,12 +89,5 @@ strong {
 
 .btn {
   @apply sm:w-1/3 lg:w-2/5;
-}
-
-.welcome-image::before {
-  content: '';
-  @apply absolute rounded-full opacity-50 bg-primary 
-    h-full w-full top-0 right-0 -z-10 shadow-[0_0_2px_-1px_white]
-    border-solid border-primary;
 }
 </style>
