@@ -9,7 +9,6 @@ export const useThemeStore = defineStore({
   },
   actions: {
     toggleTheme() {
-      console.log(this.isLightTheme);
       this.isLightTheme = !this.isLightTheme;
       localStorage.setItem('isLightTheme', JSON.stringify(this.isLightTheme));
       this.applyTheme();
@@ -19,6 +18,9 @@ export const useThemeStore = defineStore({
       if (savedTheme !== null) {
         this.isLightTheme = JSON.parse(savedTheme);
         this.applyTheme();
+      } else {
+        localStorage.setItem('isLightTheme', JSON.stringify(this.isLightTheme));
+        this.loadThemeFromLocalStorage();
       }
     },
     applyTheme() {
